@@ -1,0 +1,378 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(172, 29, 29);
+}
+
+/*Navigation Bar*/
+.nav {
+    background-color: gray;
+    overflow: hidden;
+}
+
+.nav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    background-color: #000;
+    color: white;
+}
+
+.nav a.active {
+    background-color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
+}
+
+/*Hero Section */
+.hero__section {
+    background-color: rgb(172, 29, 29);
+    padding: 0 60px;
+    color: white;
+}
+
+.hero__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__image {
+    display: flex;
+
+    width: 300px;
+    height: 500px;
+}
+
+.hero_text {
+    display: flex;
+    align-items: center;
+    margin: 100px;
+}
+
+.hero_text h1 {
+    font-size: 90px;
+    color: white;
+    -webkit-text-stroke: 5px black;
+    text-shadow: 0px 10px 10px black;
+}
+
+/*About Section*/
+.about__section {
+    padding: 0px 60px;
+    background: rgb(172, 29, 29);
+    color: white;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.about__container h1 {
+    font-size: 110px;
+    color: #000;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    margin-bottom: 32px;
+}
+/*
+.about__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 700px;
+}*/
+
+.about__text {
+    padding-left: 20px;
+}
+
+.about__text p {
+    line-height: 2.3;
+    font-size: 32px;
+}
+
+/*Proscan Section*/
+.psi {
+    background: rgb(255, 255, 255);
+    padding: 0 60px;
+    color: black;
+}
+
+.psi_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 820px;
+}
+
+.psi_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.psi_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.psi_img {
+    width: 100%;
+    height: 90%;
+}
+/*Givaudan Section*/
+.giv {
+    background: blue;
+    padding: 0 60px;
+    color: white;
+}
+
+.giv_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 820px;
+}
+
+.giv_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.giv_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.giv_img {
+    width: 100%;
+    height: 90%;
+}
+
+/*MOD Section*/
+.mod {
+    background: rgb(90, 29, 29);
+    padding: 0 60px;
+    color: white;
+}
+
+.mod_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 820px;
+}
+
+.mod_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.mod_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mod_img {
+    width: 100%;
+    height: 90%;
+}
+
+/*RPAC Section*/
+.rpac {
+    background: rgb(255, 45, 45);
+    padding: 0 60px;
+    color: white;
+}
+
+.rpac_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 820px;
+}
+
+.rpac_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.rpac_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rpac_img {
+    width: 100%;
+    height: 90%;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 1100px) {
+    .hero__section {
+        padding: 30px;
+    }
+
+    .hero__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .hero_text h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .hero__wrapper {
+        grid-template-columns: 600px;
+    }
+
+    .hero_text h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about__section {
+        padding: 30px;
+    }
+
+    .about__content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .about__image {
+        margin-top: 40px;
+    }
+
+    .about__container h1{
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .about__text h2 {
+        font-size: 42px;
+    }
+
+    .about__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .giv {
+        padding: 30px;
+    }
+
+    .giv_wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .giv_left h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .mod_wrapper {
+        grid-template-columns: 600px;
+    }
+
+    .mod_left h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .mod {
+        padding: 30px;
+    }
+
+    .mod_wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .mod_left h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .mod_wrapper {
+        grid-template-columns: 600px;
+    }
+
+    .mod_left h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .rpac {
+        padding: 30px;
+    }
+
+    .rpac_wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .rpac_left h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .rpac_wrapper {
+        grid-template-columns: 600px;
+    }
+
+    .rpac_left h1 {
+        font-size: 32px;
+    }
+}
+
+/*Contact Page*/
+.contact_wrapper {
+    background: rgb(172, 29, 29);
+    padding: 0 20px;
+    margin: none;
+}
+
+.contact_wrapper h1 {
+    color:black;
+    
+}
+
+.contact_wrapper h2 {
+    color: black;
+}
+
+.contact_wrapper p {
+    color: black;
+}
